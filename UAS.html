@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>READ Data &#8212; My sample book</title>
+    <title>UAS &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -152,7 +152,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   READ  Data
+   UAS
   </a>
  </li>
 </ul>
@@ -379,27 +379,27 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-data">
    READ  Data
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preprocessing">
    Preprocessing
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#splitting-data">
    SPLITTING Data
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#modelling-dan-testing">
    MODELLING dan TESTING
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#export-model">
    EXPORT MODEL
   </a>
@@ -413,7 +413,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>READ  Data</h1>
+                <h1>UAS</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -423,27 +423,27 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-data">
    READ  Data
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preprocessing">
    Preprocessing
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#splitting-data">
    SPLITTING Data
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#modelling-dan-testing">
    MODELLING dan TESTING
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#export-model">
    EXPORT MODEL
   </a>
@@ -458,7 +458,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="uas">
+<h1>UAS<a class="headerlink" href="#uas" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -471,8 +473,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="read-data">
-<h1>READ  Data<a class="headerlink" href="#read-data" title="Permalink to this headline">#</a></h1>
+<section id="read-data">
+<h2>READ  Data<a class="headerlink" href="#read-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/HamedAyani114/dataset/main/water_potability.csv&quot;</span><span class="p">)</span>
@@ -482,7 +484,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-03c81f91-bb92-4600-ac8c-59ebb459aefa">
+  <div id="df-4854c4e2-0fe7-45bc-83d7-1eec0f2830d9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -662,7 +664,7 @@ title="Print to PDF"
 </table>
 <p>3276 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-03c81f91-bb92-4600-ac8c-59ebb459aefa')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4854c4e2-0fe7-45bc-83d7-1eec0f2830d9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -713,12 +715,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-03c81f91-bb92-4600-ac8c-59ebb459aefa button.colab-df-convert');
+          document.querySelector('#df-4854c4e2-0fe7-45bc-83d7-1eec0f2830d9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-03c81f91-bb92-4600-ac8c-59ebb459aefa');
+          const element = document.querySelector('#df-4854c4e2-0fe7-45bc-83d7-1eec0f2830d9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -804,8 +806,8 @@ Name: Potability, dtype: int64
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="preprocessing">
-<h1>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">#</a></h1>
+<section id="preprocessing">
+<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -871,7 +873,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2a2b3051-25f0-4b54-b71c-64699c2bb772">
+  <div id="df-8f7a1f6c-848d-43d6-a95c-1ef0dc4d5747">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1051,7 +1053,7 @@ dtype: int64
 </table>
 <p>2011 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2a2b3051-25f0-4b54-b71c-64699c2bb772')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8f7a1f6c-848d-43d6-a95c-1ef0dc4d5747')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1102,12 +1104,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2a2b3051-25f0-4b54-b71c-64699c2bb772 button.colab-df-convert');
+          document.querySelector('#df-8f7a1f6c-848d-43d6-a95c-1ef0dc4d5747 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2a2b3051-25f0-4b54-b71c-64699c2bb772');
+          const element = document.querySelector('#df-8f7a1f6c-848d-43d6-a95c-1ef0dc4d5747');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1129,8 +1131,8 @@ dtype: int64
 </div></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="splitting-data">
-<h1>SPLITTING Data<a class="headerlink" href="#splitting-data" title="Permalink to this headline">#</a></h1>
+<section id="splitting-data">
+<h2>SPLITTING Data<a class="headerlink" href="#splitting-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># x = df.drop([&#39;label&#39;], axis = 1)</span>
@@ -1149,8 +1151,8 @@ dtype: int64
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="modelling-dan-testing">
-<h1>MODELLING dan TESTING<a class="headerlink" href="#modelling-dan-testing" title="Permalink to this headline">#</a></h1>
+<section id="modelling-dan-testing">
+<h2>MODELLING dan TESTING<a class="headerlink" href="#modelling-dan-testing" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
@@ -1177,12 +1179,12 @@ dtype: int64
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           0       0.68      0.90      0.77       240
-           1       0.71      0.37      0.49       163
+           0       0.66      0.84      0.74       237
+           1       0.63      0.39      0.48       166
 
-    accuracy                           0.68       403
-   macro avg       0.69      0.64      0.63       403
-weighted avg       0.69      0.68      0.66       403
+    accuracy                           0.66       403
+   macro avg       0.65      0.61      0.61       403
+weighted avg       0.65      0.66      0.63       403
 </pre></div>
 </div>
 </div>
@@ -1202,12 +1204,12 @@ weighted avg       0.69      0.68      0.66       403
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           0       0.61      0.89      0.73       240
-           1       0.53      0.18      0.27       163
+           0       0.63      0.86      0.73       237
+           1       0.59      0.29      0.39       166
 
-    accuracy                           0.60       403
-   macro avg       0.57      0.53      0.50       403
-weighted avg       0.58      0.60      0.54       403
+    accuracy                           0.62       403
+   macro avg       0.61      0.57      0.56       403
+weighted avg       0.61      0.62      0.59       403
 </pre></div>
 </div>
 </div>
@@ -1241,12 +1243,12 @@ weighted avg       0.58      0.60      0.54       403
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> KNN scores
               precision    recall  f1-score   support
 
-           0       0.62      0.71      0.66       240
-           1       0.47      0.37      0.41       163
+           0       0.60      0.68      0.64       237
+           1       0.43      0.35      0.39       166
 
-    accuracy                           0.57       403
-   macro avg       0.55      0.54      0.54       403
-weighted avg       0.56      0.57      0.56       403
+    accuracy                           0.54       403
+   macro avg       0.52      0.51      0.51       403
+weighted avg       0.53      0.54      0.53       403
 
 **************************************************************************************************** 
 
@@ -1254,12 +1256,12 @@ weighted avg       0.56      0.57      0.56       403
  DT scores
               precision    recall  f1-score   support
 
-           0       0.64      0.70      0.67       240
-           1       0.49      0.44      0.46       163
+           0       0.63      0.63      0.63       237
+           1       0.47      0.47      0.47       166
 
-    accuracy                           0.59       403
-   macro avg       0.57      0.57      0.57       403
-weighted avg       0.58      0.59      0.59       403
+    accuracy                           0.56       403
+   macro avg       0.55      0.55      0.55       403
+weighted avg       0.56      0.56      0.56       403
 
 **************************************************************************************************** 
 </pre></div>
@@ -1267,12 +1269,12 @@ weighted avg       0.58      0.59      0.59       403
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> RFC scores
               precision    recall  f1-score   support
 
-           0       0.68      0.87      0.76       240
-           1       0.67      0.39      0.49       163
+           0       0.67      0.82      0.73       237
+           1       0.62      0.42      0.50       166
 
-    accuracy                           0.67       403
-   macro avg       0.67      0.63      0.63       403
-weighted avg       0.67      0.67      0.65       403
+    accuracy                           0.65       403
+   macro avg       0.64      0.62      0.62       403
+weighted avg       0.65      0.65      0.64       403
 
 **************************************************************************************************** 
 
@@ -1280,12 +1282,12 @@ weighted avg       0.67      0.67      0.65       403
  GNB scores
               precision    recall  f1-score   support
 
-           0       0.61      0.89      0.73       240
-           1       0.53      0.18      0.27       163
+           0       0.63      0.86      0.73       237
+           1       0.59      0.29      0.39       166
 
-    accuracy                           0.60       403
-   macro avg       0.57      0.53      0.50       403
-weighted avg       0.58      0.60      0.54       403
+    accuracy                           0.62       403
+   macro avg       0.61      0.57      0.56       403
+weighted avg       0.61      0.62      0.59       403
 
 **************************************************************************************************** 
 </pre></div>
@@ -1293,8 +1295,8 @@ weighted avg       0.58      0.60      0.54       403
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="export-model">
-<h1>EXPORT MODEL<a class="headerlink" href="#export-model" title="Permalink to this headline">#</a></h1>
+<section id="export-model">
+<h2>EXPORT MODEL<a class="headerlink" href="#export-model" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import pandas</span>
@@ -1310,6 +1312,7 @@ weighted avg       0.58      0.60      0.54       403
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
